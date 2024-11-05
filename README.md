@@ -1,11 +1,5 @@
 # TCTrack: Temporal Contexts for Aerial Tracking （CVPR2022) & TCTrack++：Towards Real-World Visual Tracking with Temporal Contexts （TPAMI）
 
-[Ziang Cao](https://ziangcao0312.github.io/) and [Ziyuan Huang](https://huang-ziyuan.github.io/) and [Liang Pan](https://scholar.google.com/citations?user=lSDISOcAAAAJ&hl=zh-CN&authuser=1) and Shiwei Zhang and [Ziwei Liu](https://liuziwei7.github.io/) and [Changhong Fu](https://vision4robotics.github.io/authors/changhong-fu/)
-
-In CVPR, 2022.
-
-[[paper](https://arxiv.org/abs/2203.01885)] [[paper_journal](https://arxiv.org/abs/2308.10330)]
-
 ## Abstract
 Temporal contexts among consecutive frames are far
 from being fully utilized in existing visual trackers. In this work, we present TCTrack, a comprehensive framework to fully exploit temporal contexts for aerial tracking. The temporal contexts are incorporated at two levels: the extraction of features and the refinement of similarity maps. Specifically, for feature extraction, an online temporally adaptive convolution is proposed to enhance the spatial features using temporal information, which is achieved by dynamically calibrating the convolution weights according to the previous frames. For similarity map refinement, we propose an adaptive temporal transformer, which first effectively encodes
@@ -17,9 +11,6 @@ its impressive performance; real-world UAV tests show its
 high speed of over 27 FPS on NVIDIA Jetson AGX Xavier.
 
 ![Workflow of our tracker](https://github.com/vision4robotics/TCTrack/blob/main/images/workflow.jpg)
-
-
-The implementation of our online temporally adaptive convolution is based on [TadaConv](https://github.com/alibaba-mmai-research/TAdaConv) (ICLR2022).
 
 
 ## 1. Environment setup
@@ -147,26 +138,3 @@ python eval.py 	                          \
 ## Demo video
 [![TCTrack](https://res.cloudinary.com/marcomontalbano/image/upload/v1646040242/video_to_markdown/images/youtube--wcR3iCFJN4E-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/wcR3iCFJN4E "TCTrack")
 
-## References 
-
-```
-@inproceedings{cao2022tctrack,
-	title={{TCTrack: Temporal Contexts for Aerial Tracking}},
-	author={Cao, Ziang and Huang, Ziyuan and Pan, Liang and Zhang, Shiwei and Liu, Ziwei and Fu, Changhong},
-	booktitle={CVPR},
-	pages={14798--14808},
-	year={2022}
-}
-
-@article{cao2023towards,
-  title={Towards Real-World Visual Tracking with Temporal Contexts},
-  author={Cao, Ziang and Huang, Ziyuan and Pan, Liang and Zhang, Shiwei and Liu, Ziwei and Fu, Changhong},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  year={2023},
-  publisher={IEEE}
-}
-
-```
-
-## Acknowledgement
-The code is implemented based on [pysot](https://github.com/STVIR/pysot). We would like to express our sincere thanks to the contributors.
